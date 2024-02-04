@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <title>Portal de Nóticias</title>
+    <style>
+        img {
+            height:600px;
+        }
+
+        .carousel-caption h2 {
+            background-color: black;
+        }
+
+        @media(max-width:1023px){
+            .row{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .card{
+                width:350px;
+            }
+        }
+
+        @media(max-width:768px){
+            .row{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+            .card{
+                width:350px;
+                margin-left: 40%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Portal de Notícias</h1>  
+    <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div data-bs-interval="2000" class="carousel-item active">
+                <img class="d-block w-100" src="./images/R.jpeg">
+                <div class="carousel-caption">
+                    <h2>Últimas notícias sobre o Instituto Federal de Minas</h2>
+                </div>
+            </div>
+            <div data-bs-interval="2000" class="carousel-item">
+                <img class="d-block w-100" src="./images/R (1).jpeg">
+                <div class="carousel-caption">
+                    <h2>Últimas atualizações sobre o futebol brasileiro</h2>
+                </div>
+            </div>
+            <div data-bs-interval="2000" class="carousel-item">
+                <img class="d-block w-100" src="./images/OIP.jpeg">
+                <div class="carousel-caption">
+                    <h2>Últimas notícias sobre a ciência e tecnologia no mundo</h2>
+                </div>
+            </div>
+            <div data-bs-interval="2000" class="carousel-item">
+                <img class="d-block w-100" src="./images/OIP (1).jpeg">
+                <div class="carousel-caption">
+                    <h2>Política</h2>
+                </div>
+            </div>
+        </div>
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="prev"class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="next"class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="3"></button>
+        </div>
+    </div> 
+    
+    <section id="produtos">
+        <h1>Últimas Notícias</h1>
+        <div class="container">
+            <nav class="nav nav-pills">
+                <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active" type="button">Ciência e Teccnologia</button>
+                <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">Política</button>
+                <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link" type="button">Esportes</button>
+            </nav>
+            <div class="tab-content">
+                <div class="tab-pane active" id="aba1">
+
+                    <div class="row">
+
+                        <div class="col-4">
+                            <article class="card">
+                                <header class="card-header">
+                                    Ciência e Tecnologia
+                                </header>
+                                <img src="./images/ciência 1.jpeg">
+                                <div class="card-body">
+                                    <h4 class="card-title">Papel da Ciência e Tecnologia na sociedade</h4>
+                                    <p class="card-text">
+                                        Conheça as aplicações modernas da ciência em nossas vidas
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Leia mais</a>
+                                </div>
+                                <footer class="card-footer">
+                                    Postado em  <time>03/02/2024 às 22:00:00</time>
+                                </footer>
+                            </article>
+                        </div>
+
+                        <div class="col-4">
+                            <article class="card">
+                                <header class="card-header">
+                                    Ciência e Tecnologia
+                                </header>
+                                <img src="./images/ciência 2.webp">
+                                <div class="card-body">
+                                    <h4 class="card-title">Últimos avanços da ciência da computação</h4>
+                                    <p class="card-text">
+                                        Últimos avanços no campo da tecnologia da computação.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Leia mais</a>
+                                </div>
+                                <footer class="card-footer">
+                                    Postado em  <time>03/02/2024 às 22:00:00</time>
+                                </footer>
+                            </article>
+                        </div>
+
+                        <div class="col-4">
+                            <article class="card">
+                                <header class="card-header">
+                                    Ciência e Tecnologia
+                                </header>
+                                <img src="./images/ciencia 3.jpeg">
+                                <div class="card-body">
+                                    <h4 class="card-title">Novidades na Robótica</h4>
+                                    <p class="card-text">
+                                        Conheça as últimas novidades e inveções da robótica.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Leia mais</a>
+                                </div>
+                                <footer class="card-footer">
+                                    Postado em  <time>03/02/2024 às 22:00:00</time>
+                                </footer>
+                            </article>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <div class="tab-pane" id="aba2">
+                    
+
+                    <div class="row">
+                        <div class="col-4">
+                            <article class="card">
+                                <header class="card-header">
+                                    Política
+                                </header>
+                                <img src="./images/politica 1.jpeg">
+                                <div class="card-body">
+                                    <h4 class="card-title">Novo investigado na operação lava-jato</h4>
+                                    <p class="card-text">
+                                        Saiba quem é o novo personagem político apontado nas investigações da lava-jato.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Leia mais</a>
+                                </div>
+                                <footer class="card-footer">
+                                    Postado em  <time>03/02/2024 às 22:00:00</time>
+                                </footer>
+                            </article>
+                        </div>
+
+                        <div class="col-4">
+                            <article class="card">
+                                <header class="card-header">
+                                    Política
+                                </header>
+                                <img src="./images/politica 2.jpeg">
+                                <div class="card-body">
+                                    <h4 class="card-title">Resultados do primeiro turno das eleições</h4>
+                                    <p class="card-text">
+                                        Confira os resultados do primeiro turno das eleições municipais.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Leia mais</a>
+                                </div>
+                                <footer class="card-footer">
+                                    Postado em  <time>03/02/2024 às 22:00:00</time>
+                                </footer>
+                            </article>
+                        </div>
+
+                        <div class="col-4">
+                            <article class="card">
+                                <header class="card-header">
+                                    Política
+                                </header>
+                                <img src="./images/politica 3.webp">
+                                <div class="card-body">
+                                    <h4 class="card-title">Pesquisa eleitoral do município de São Paulo</h4>
+                                    <p class="card-text">
+                                        Confira quem é o favorito a prefeito de São Paulo.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Leia mais</a>
+                                </div>
+                                <footer class="card-footer">
+                                    Postado em  <time>03/02/2024 às 22:00:00</time>
+                                </footer>
+                            </article>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="tab-pane" id="aba3">
+                    
+
+                    <div class="row">
+                        <div class="col-4">
+                            <article class="card">
+                                <header class="card-header">
+                                    Esportes
+                                </header>
+                                <img src="./images/esportes 1.webp">
+                                <div class="card-body">
+                                    <h4 class="card-title">Desempenho atual da seleção brasileira de Volei</h4>
+                                    <p class="card-text">
+                                        Confira o desempenho da seleção nos últimos jogos.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Leia mais</a>
+                                </div>
+                                <footer class="card-footer">
+                                    Postado em  <time>03/02/2024 às 22:00:00</time>
+                                </footer>
+                            </article>
+                        </div>
+
+                        <div class="col-4">
+                            <article class="card">
+                                <header class="card-header">
+                                    Esportes
+                                </header>
+                                <img src="./images/esporte 2.jpeg">
+                                <div class="card-body">
+                                    <h4 class="card-title">Novo nome brasileiro fazendo sucesso no ciclismo</h4>
+                                    <p class="card-text">
+                                        Confira o mais novo nome brasileiro que está causando no ciclismo.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Leia mais</a>
+                                </div>
+                                <footer class="card-footer">
+                                    Postado em  <time>03/02/2024 às 22:00:00</time>
+                                </footer>
+                            </article>
+                        </div>
+
+                        <div class="col-4">
+                            <article class="card">
+                                <header class="card-header">
+                                    Esportes
+                                </header>
+                                <img src="./images/esporte 3.jpeg">
+                                <div class="card-body">
+                                    <h4 class="card-title">Ótimo desempenho do Brasil no futebol de salão</h4>
+                                    <p class="card-text">
+                                        Confira o último jogo da seleção brasileira de futebol de salão.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Leia mais</a>
+                                </div>
+                                <footer class="card-footer">
+                                    Postado em  <time>03/02/2024 às 22:00:00</time>
+                                </footer>
+                            </article>
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
